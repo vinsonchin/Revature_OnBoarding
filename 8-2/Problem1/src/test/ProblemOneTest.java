@@ -18,11 +18,23 @@ public class ProblemOneTest {
     }
 
     @Test
-    public void test() {
+    public void test1() {
 
         String a = "Minneapolis";
         String b = "Minnesota";
         int expected = 5;
+
+        int actual = sut.LCS(a,b);
+
+        Assert.assertEquals(expected,actual);
+    }
+
+    @Test
+    public void test2() {
+
+        String a = "abcd";
+        String b = "abbcd";
+        int expected = 3;
 
         int actual = sut.LCS(a,b);
 
